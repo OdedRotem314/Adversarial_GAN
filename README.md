@@ -6,8 +6,8 @@ Then a random scalar and output of the black box together with the generated sam
 
 ![image](https://user-images.githubusercontent.com/63725708/124120645-aab94300-da7c-11eb-8ee3-e45f696b8662.png)
 
-The generator receives two inputs – Z and C – and produces a 
-sample. This sample is sent to the discriminator, which also receives C (same C as the generator) and 
+The generator receives two inputs – Z (random vector) and C (random scalar) – and produces a 
+sample of length similar to the array of the real data sample. This sample is sent to the discriminator, which also receives C (same C as the generator) and 
 the output of the BB model for this sample. The goal of the discriminator is to determine which 
 classification is the “real” one (i.e., produced by the BB model)
 
