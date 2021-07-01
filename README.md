@@ -10,6 +10,7 @@ The generator receives two inputs – Z and C – and produces a
 sample. This sample is sent to the discriminator, which also receives C (same C as the generator) and 
 the output of the BB model for this sample. The goal of the discriminator is to determine which 
 classification is the “real” one (i.e., produced by the BB model)
+
 The goal of the discriminator is to determine which of the two values – C or Y – is the true 
 classification produced by the black-box model. The output of the discriminator, denoted by 
 �", will be used for the calculation of the loss in the standard fashion
